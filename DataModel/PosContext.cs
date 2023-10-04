@@ -27,7 +27,7 @@ public partial class PosContext : DbContext
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 
-        => optionsBuilder.UseMySql("server=127.0.0.1,3306;database=POS;user=root;password=Htetsuaung@1", Microsoft.EntityFrameworkCore.ServerVersion.Parse("8.1.0-mysql"));
+        => optionsBuilder.UseMySql("server=127.0.0.1,3306;database=POS;user=root;password=", Microsoft.EntityFrameworkCore.ServerVersion.Parse("8.1.0-mysql"));
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
